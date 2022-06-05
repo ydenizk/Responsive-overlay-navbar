@@ -5,12 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav>
       <div class="nav-container">
-        <h1 class="logo">BJK</h1>
+        <div class="small-screen">
+          <h1 class="logo">BJK</h1>
+          <button class="ham">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
         <ul class="menu">
           <li>
             <a href="#">Products</a>
@@ -27,15 +40,24 @@
               <li><a href="#">Libraries</a></li>
               <li><a href="#">Plugins</a></li>
               <li><a href="#">Billing</a></li>
-            </ul> 
+            </ul>
           </li>
-          <li><a href="#">Company</a></li>
+          <li class="last-li"><a href="#">Company</a></li>
+          <button class="sign-in">Sign in</button>
         </ul>
-        <button>Sign in</button>
       </div>
     </nav>
-
     <section class="back-color"></section>
+    <!-- Full screen menu -->
+
+    <section class="full-menu active ">
+      <div class="full-menu-container ">
+        <button class="cross"><i class="fa-solid fa-xmark"></i></button>
+        <div class="full-menu-details">yessss</div>
+      </div>
+    </section>
+
+
 
     <script src="./kartal.js"></script>
   </body>
